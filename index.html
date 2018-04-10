@@ -18,6 +18,7 @@
   </style>
   <script>
   //comment A
+
 var dog_array = [
   {breed: 'akita', rating: 3.4, disposition: 'obedient', image:'http://upload.wikimedia.org/wikipedia/commons/e/e0/Japaneseakita.jpg',description:"The Akita is a large and powerful dog breed with a noble and intimidating presence. He was originally used for guarding royalty and nobility in feudal Japan. The Akita also tracked and hunted wild boar, black bear, and sometimes deer. He is a fearless and loyal guardian of his family. The Akita does not back down from challenges and does not frighten easily. Yet he is also an affectionate, respectful, and amusing dog when properly trained and socialized."
   },
@@ -39,7 +40,7 @@ function find_max_dog(dog_array){
   var max_index = 0;
   for(var i = 1; i < dog_array.length; i++)
   {
-    console.log('checking '+dog_array[i].rating+' versus '+max)
+    console.log('checking '+dog_array[i].rating+' versus '+max);
     if(dog_array[i].rating > max){
          max = dog_array[i].rating;
          max_index = i;
@@ -56,6 +57,7 @@ function find_max_dog(dog_array){
 * returns: none
 */
 function display_dogs(target_element, dog_array, max_index)
+
 {
   var dog_container = $(target_element);
   for(var i=0;i<dog_array.length;i++)
@@ -125,7 +127,7 @@ function display_one_dog(dog)
  
     var dog_disposition_div = $('<div>',{
       class: 'dog_disposition',
-      html: '<strong>Quality</strong> '+dog.disposition,
+      html: '<strong>Quality</strong> '+dog.disposition
     });
  
     var dog_rating_div = $('<div>',{
